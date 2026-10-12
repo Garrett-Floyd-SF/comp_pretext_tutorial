@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Other Pretext Features</title>
+  <p>
+    Let's say we want add a link to simple syllabus.
+    Here's how we would do that: 
+    <url href="https://sfcollege.simplesyllabus.com/en-US/syllabus-library">
+      Link to Sante Fe's simple syllabus
+    </url>.
+    Let's say we want to add a picture to our lecture.
+    Here's how we would do that:
+  </p>
+    <figure>
+        <caption>
+            Your figure caption goes here.
+        </caption>
+        <image source="./SFCollegeLogo.png">
+            <shortdescription>
+            Your alt text goes here.
+            </shortdescription>
+        </image>
+    </figure>
+  <p>
+    Let's say there's a youtube video that would be perfect for explaining this topic.
+    Here's how we would do that:
+  </p>
+
+</section>

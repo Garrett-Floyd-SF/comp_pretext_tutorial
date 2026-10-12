@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-math" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Math</title>
+
+  <p>
+    An example of using the math element to put math inside of text is <m>\int_{1}^{2} x dx</m>.
+    m is short for math.
+    The way you tell pretext what math you want
+    rendered in math type elements is by writing the math in latex.
+    An example of using the math display element to put math on its own line is
+    <md>
+      \int_{1}^{2} x dx = \frac{x^{2}}{2} \Big|_{1}^{2} = \frac{1}{2}\left(4 - 1 \right) = \frac{3}{4}
+    </md>.
+    md is short for math display.
+  </p>
+  <p>
+    What if we want to align multiple equations where each equation gets its own line.
+    For the that we can use a math display element with additional children elements.
+    Here's an example for a system of equations:
+    <md>
+      <mrow> 9 \amp = 4x + 2y </mrow>
+      <mrow> 8 \amp = 5x + 3y </mrow>
+    </md>.
+    The mrow element tells pretext that its contents belong on thier own row.
+    The \amp command tells pretext where the alignment point for every row is.
+    In our example we aligned the equations at the equal sign.
+    we can also number our equations, and or give them xml:ids.
+    Here's an example:
+    <md number="yes" xml:id="eq-2+3=5">
+      2 + 3 = 5
+    </md>.
+  </p>
+  <p>
+    Finally, pretext provides some useful elements for
+    displaying important math results and examples.
+    Here is an example of a theorem element:
+  </p>
+  <theorem>
+    <title>Pythagorean Theorem</title>
+    <statement>
+      <p>
+        In a right-angled triangle,
+        the square of the hypotenuse (<m>c</m>)
+        equals the sum of the squares of the other two sides.
+        <md>
+          a^{2} + b^{2} = c^{2}
+        </md>
+      </p>
+    </statement>
+    <proof>
+      <p>
+        This is were you would put the proof,
+        but we don't have time in this tutorial.
+      </p>
+    </proof>
+  </theorem>
+  <p>
+    Here is an example of an example element:
+  </p>
+  <example>
+    <title>Quadratic Equation</title>
+    <statement>
+      <p>Solve for <m>x</m>: <m>x^2 - 5x + 6 = 0</m>.</p>
+    </statement>
+    <hint>
+      <p>Try factoring the quadratic expression into two binomials.</p>
+    </hint>
+    <answer>
+      <p><m>x = 2</m> or <m>x = 3</m></p>
+    </answer>
+    <solution>
+      <p>Factor the expression as <m>(x - 2)(x - 3) = 0</m>. Setting each factor to zero yields <m>x = 2</m> and <m>x = 3</m>.</p>
+    </solution>
+  </example>
+  <p>
+    Pretext also offers several other elements
+    like the two above.
+    For more info check out the pretext guide.
+  </p>
+
+</section>
