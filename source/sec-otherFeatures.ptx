@@ -15,7 +15,7 @@
         <caption>
             Your figure caption goes here.
         </caption>
-        <image source="./SFCollegeLogo.png">
+        <image source="imgs/SFCollegeLogo.png">
             <shortdescription>
             Your alt text goes here.
             </shortdescription>

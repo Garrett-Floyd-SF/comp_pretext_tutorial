@@ -27,7 +27,7 @@
     In our example we aligned the equations at the equal sign.
     we can also number our equations, and or give them xml:ids.
     Here's an example:
-    <md number="yes" xml:id="eq-2+3=5">
+    <md number="yes" xml:id="eq-bscAdd">
       2 + 3 = 5
     </md>.
   </p>
